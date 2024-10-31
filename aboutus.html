@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Real Estate Co.</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<style>
+    /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+header{
+    text-align: center;
+    padding:0.5rem 0;    
+}
+.back{
+    background: url("back\ buttonn.png") ;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-left: 30px;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.back:hover{
+    transform: scale(1.3); /* Scales up the whole container slightly on hover */
+
+}
+.containerr{
+    display: flex;
+    gap: 500px;
+}
+
+
+
+
+
+/* About Us Section */
+.about-us {
+    background: linear-gradient(135deg, #fff, #e6e6e6);
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-content {
+    max-width: 50%;
+    float: left;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.about-content .title {
+    font-size: 2.5rem;
+    color: #f69314;
+    margin-bottom: 20px;
+}
+
+.about-content .intro {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.about-content .description,
+.about-content .mission {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    max-width: 50%;
+    float: right;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05); /* Slightly scales up the image on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow on hover */
+}
+
+/* Team Section */
+.team {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team .title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #f69314;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+}
+
+.member {
+    width: 30%;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.member img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.member img:hover {
+    transform: scale(1.1); /* Slightly scales up the image on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow on hover */
+}
+
+.member h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Values Section */
+.values {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.values .title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #f69314;
+}
+
+.values-content {
+    display: flex;
+    justify-content: space-around;
+}
+.value {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+.value h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+.value p {
+    font-size: 1rem;
+    color: #777;
+}
+/* Animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+<body>
+    <header style="background: rgb(223, 217, 213);">
+        <div class="containerr">
+            <a href="index.php" class="back">
+            </a>
+        <h1 style="color: #f69314;">About Us</h1>
+        </div>
+          
+    </header>
+     
+    <section class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="title">Our Team</h2>
+                <p class="intro">Welcome to Prime Property Co., where dreams come home.</p>
+                <p class="description">
+                    At Prime Property Co., we specialize in connecting people with their perfect homes. Our team of experienced professionals is dedicated to making the process of buying, selling, and renting properties seamless and stress-free.
+                </p>
+                <p class="mission">
+                    Our mission is to provide exceptional real estate services, fostering long-lasting relationships with our clients through trust, transparency, and integrity.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="Images/pexels-divinetechygirl-1181438.jpg" alt="Our Team">
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <h2 class="title">Meet Our Team</h2>
+            <div class="team-members">
+                <div class="member">
+                    <img src="Images/pexels-olly-864994.jpg" alt="Team Member 1">
+                    <h3>Darshna Hadiya</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="member">
+                    <img src="Images/pexels-rdne-7821936.jpg" alt="Team Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>Head of Sales</p>
+                </div>
+                <div class="member">
+                    <img src="Images/pexels-pavel-danilyuk-7937670.jpg" alt="Team Member 3">
+                    <h3>Liya Brown</h3>
+                    <p>Lead Architect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="container">
+            <h2 class="title">Our Core Values</h2>
+            <div class="values-content">
+                <div class="value">
+                    <h3>Integrity</h3>
+                    <p>We uphold the highest standards of integrity in all our actions.</p>
+                </div>
+                <div class="value">
+                    <h3>Excellence</h3>
+                    <p>We are committed to delivering excellence in every aspect of our work.</p>
+                </div>
+                <div class="value">
+                    <h3>Customer Focus</h3>
+                    <p>Our clients' satisfaction is at the heart of everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
